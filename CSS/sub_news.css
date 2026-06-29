@@ -245,6 +245,23 @@
     overflow: hidden;
 }
 
+#event_list li a::after{
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    border: 10px solid #009223;
+    transition-duration: 0.2s;
+}
+#event_list li a:hover::after{
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
 #event_list figure{
     width: 370px;
     height: 192px;
